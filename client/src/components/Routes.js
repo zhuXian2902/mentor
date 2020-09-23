@@ -11,8 +11,8 @@ function Routes() {
 		<div>
 			<BrowserRouter>
 				<Switch>
-					<Route path="/admin" exact component={Mentors} />
-					<Route path="/admin/:id" exact component={Tasks} />
+					<Route path="/" exact component={Mentors} />
+					<Route path="/:id" exact component={Tasks} />
 				</Switch>
 			</BrowserRouter>
 		</div>
