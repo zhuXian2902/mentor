@@ -54,7 +54,7 @@ function Mentors() {
 	const showTasks = () => {};
 
 	const getMentors = async () => {
-		const res = await axios.get('/');
+		const res = await axios.get('/admin');
 		console.log(res);
 		setMentors(res.data.data);
 	};

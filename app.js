@@ -30,7 +30,7 @@ mongoose
 	});
 app.use(express.static(path.join(__dirname, '/client/build')));
 
-app.use('/admin', mentorRouter);
+app.use('/api/admin', mentorRouter);
 
 app.use((err, req, res, next) => {
 	if (err.code === 11000) err.message = `value already exists`;
