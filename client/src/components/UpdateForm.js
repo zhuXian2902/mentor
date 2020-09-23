@@ -19,7 +19,6 @@ export default function FormDialog(props) {
 
 	const getMentors = async () => {
 		const res = await axios.get(`/admin/${id}`);
-		console.log(res);
 		setName(res.data.data.name);
 		setSubject(res.data.data.subject);
 	};

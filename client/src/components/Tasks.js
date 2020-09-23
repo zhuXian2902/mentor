@@ -36,8 +36,6 @@ const toastOptions = {
 };
 
 function Tasks(props) {
-	console.log(props);
-
 	const [tasks, setTasks] = useState([]);
 	const [task, setTask] = useState('');
 	const [change, setChange] = useState(false);
@@ -46,7 +44,6 @@ function Tasks(props) {
 
 	const getTasks = async () => {
 		const res = await axios.get(`/admin/${id}`);
-		console.log(res);
 		setTasks(res.data.data.task);
 	};
 

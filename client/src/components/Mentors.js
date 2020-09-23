@@ -55,7 +55,7 @@ function Mentors() {
 
 	const getMentors = async () => {
 		const res = await axios.get('/admin');
-		console.log(res);
+
 		setMentors(res.data.data);
 	};
 
